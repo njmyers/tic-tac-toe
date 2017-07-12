@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tic-Tac-Toe</title>
+  <script src="./jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="./script.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+<div class="background">
+  <div class="container-fluid">
+  <h1 class="">Tic-<span class="red">Tac</span>-Toe</h1>
+  <div class="container">
+    <div class="tally">
+      <span id="player-tally"></span>
+      <span id="computer-tally"></span>
+    </div>
+  </div>  
+  <div id="tic-tac-toe">
+    <div class="row">
+      <div id="0-space"><span></span></div>
+      <div id="1-space"><span></span></div>
+      <div id="2-space"><span></span></div>
+    </div>
+    <div class="row">
+      <div id="3-space"><span></span></div>
+      <div id="4-space"><span></span></div>
+      <div id="5-space"><span></span></div>
+    </div>
+    <div class="row">
+      <div id="6-space"><span></span></div>
+      <div id="7-space"><span></span></div>
+      <div id="8-space"><span></span></div>
+    </div>
+  </div>
+    <div id="choose-side">
+      <p>choose your side, X's go first</p>
+      <button id="x" value="x">X</button>
+      <button id="o" value="o">O</button>
+    </div>    
+    <div class="post-win">
+    <p id="winner" class="hide"></p>
+    <p id="new-game" class="hide"></p>
+    </div> 
+  </div>
+</div>
+</body>
+</html>
