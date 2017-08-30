@@ -32,9 +32,9 @@ h1 {
 }
 
 .tally {
-  margin-top: -40px;
-  margin-bottom: 20px;
+  margin-top: -60px;
   position: relative;
+  height: 60px;
 }
 
 .container {
