@@ -44,6 +44,10 @@ $small-phone-width: 200px
 	@media (min-width: $small-phone-width) and (max-width: $phone-width - 1)
 		@content
 
+@mixin all-phone
+	@media (min-width: $small-phone-width) and (max-width: $tablet-width - 1)
+		@content
+
 @mixin phone
 	@media (min-width: $phone-width) and (max-width: $tablet-width - 1)
 		@content

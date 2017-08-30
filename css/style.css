@@ -11,6 +11,14 @@ body {
 
 h1 {
   font-size: 4em; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+      font-size: 3em;
+      margin-top: 2em; } }
+  @media (min-width: 200px) and (max-width: 767px) {
+    h1 {
+      font-size: 2em;
+      margin-top: 3em; } }
 
 .background {
   position: relative;
@@ -21,7 +29,7 @@ h1 {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  align-items: center; }
+  justify-content: center; }
 
 .container-fluid {
   position: relative;
@@ -30,7 +38,10 @@ h1 {
 .tally {
   margin-top: -60px;
   position: relative;
-  height: 60px; }
+  height: 40px; }
+  @media (min-width: 200px) and (max-width: 439px) {
+    .tally {
+      margin-top: -30px; } }
 
 .container {
   position: relative; }
@@ -38,20 +49,50 @@ h1 {
 #player-tally,
 #computer-tally {
   position: absolute; }
+  @media (min-width: 200px) and (max-width: 767px) {
+    #player-tally,
+    #computer-tally {
+      font-size: 12px; } }
 
 #player-tally {
   left: 15px; }
+  @media (min-width: 200px) and (max-width: 767px) {
+    #player-tally {
+      left: 5px; } }
 
 #computer-tally {
   right: 15px; }
+  @media (min-width: 200px) and (max-width: 767px) {
+    #computer-tally {
+      right: 5px; } }
 
 #tic-tac-toe {
   position: relative; }
-  #tic-tac-toe div div span {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+  #tic-tac-toe div div {
+    height: 100px;
+    width: 100px;
+    border: 8px solid black;
+    display: inline-block;
+    font-size: 90px;
+    position: relative;
+    margin: 0; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #tic-tac-toe div div {
+        height: 100px;
+        width: 100px;
+        font-size: 75px;
+        border-width: 6px; } }
+    @media (min-width: 200px) and (max-width: 767px) {
+      #tic-tac-toe div div {
+        height: 60px;
+        width: 60px;
+        font-size: 60px;
+        border-width: 6px; } }
+    #tic-tac-toe div div span {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
 
 button {
   font-family: "Gloria Hallelujah", cursive;
